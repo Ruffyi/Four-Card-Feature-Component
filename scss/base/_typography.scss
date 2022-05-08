@@ -1,0 +1,25 @@
+.heading__primary {
+	font-size: 3.8rem;
+	font-weight: 200;
+	color: var(--clr-neutral-very-dark-blue);
+	@include mediaQuery(map-get($breakpoints-map, '490')) {
+		font-size: 2.8rem;
+	}
+}
+.heading__secondary {
+	font-size: 4rem;
+	color: var(--clr-neutral-very-dark-blue);
+	@include mediaQuery(map-get($breakpoints-map, '490')) {
+		font-size: 3rem;
+	}
+}
+
+.paragraph {
+	margin: 2rem auto 4rem;
+	width: clamp(35rem, 40%, 60rem);
+	font-size: 1.3rem;
+	color: var(--clr-neutral-grayish-blue);
+	@include mediaQuery(map-get($breakpoints-map, '490')) {
+		font-size: 1.7rem;
+	}
+}
