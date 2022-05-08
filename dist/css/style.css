@@ -6,6 +6,16 @@
   box-sizing: inherit;
 }
 
+:root {
+  --clr-primary-red: hsl(0deg, 78%, 62%);
+  --clr-primary-cyan: hsl(180deg, 62%, 55%);
+  --clr-primary-orange: hsl(34deg, 97%, 64%);
+  --clr-primary-blue: hsl(212deg, 86%, 64%);
+  --clr-neutral-very-dark-blue: hsl(234deg, 12%, 34%);
+  --clr-neutral-grayish-blue: hsl(229deg, 6%, 66%);
+  --clr-neutral-very-light-gray: hsl(0deg, 0%, 98%);
+}
+
 html {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
