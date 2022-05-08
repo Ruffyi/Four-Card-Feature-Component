@@ -17,6 +17,7 @@
 .paragraph {
 	margin: 2rem auto 4rem;
 	width: clamp(35rem, 40%, 60rem);
+	text-align: center;
 	font-size: 1.3rem;
 	color: var(--clr-neutral-grayish-blue);
 	@include mediaQuery(map-get($breakpoints-map, '490')) {

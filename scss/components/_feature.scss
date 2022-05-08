@@ -1,0 +1,33 @@
+.feature {
+	width: 35rem;
+	padding: 2rem;
+	box-shadow: 0 1rem 2rem var(--clr-box-shadow);
+	background-color: var(--clr-neutral-white);
+	border-radius: 0.5rem;
+	&__title {
+		margin: 1rem 0 2rem 0;
+		font-size: 1.7rem;
+		letter-spacing: 1px;
+		color: var(--clr-neutral-very-dark-blue);
+	}
+	&__paragraph {
+		font-size: 1.2rem;
+		color: var(--clr-neutral-grayish-blue);
+	}
+	&__icon {
+		padding: 2rem 0;
+		text-align: right;
+	}
+	&--builder {
+		border-top: 4px solid var(--clr-primary-red);
+	}
+	&--calculator {
+		border-top: 4px solid var(--clr-primary-blue);
+	}
+	&--karma {
+		border-top: 4px solid var(--clr-primary-orange);
+	}
+	&--supervisor {
+		border-top: 4px solid var(--clr-primary-cyan);
+	}
+}

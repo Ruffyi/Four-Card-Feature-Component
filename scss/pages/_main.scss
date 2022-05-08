@@ -1,5 +1,11 @@
 .main {
+	@include flex-mother(column, center, flex-start);
 	min-height: 100vh;
 	padding: 6rem 0;
-	text-align: center;
+}
+
+.features {
+	position: relative;
+	flex-grow: 1;
+	width: 100%;
 }
