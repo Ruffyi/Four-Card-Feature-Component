@@ -14,3 +14,15 @@
 	align-items: $alignItems;
 	justify-content: $justifyContent;
 }
+
+@mixin positioning($position: absolute, $top: 0, $left: 0, $invert: false) {
+	@if ($invert) {
+		position: $position;
+		bottom: $top;
+		right: $left;
+	} @else {
+		position: $position;
+		top: $top;
+		left: $left;
+	}
+}

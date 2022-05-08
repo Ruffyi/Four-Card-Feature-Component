@@ -1,9 +1,15 @@
 .feature {
-	width: 35rem;
+	width: 30%;
 	padding: 2rem;
 	box-shadow: 0 1rem 2rem var(--clr-box-shadow);
 	background-color: var(--clr-neutral-white);
 	border-radius: 0.5rem;
+	@include mediaQuery(map-get($breakpoints-map, '690')) {
+		width: 70%;
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
 	&__title {
 		margin: 1rem 0 2rem 0;
 		font-size: 1.7rem;
@@ -18,16 +24,34 @@
 		padding: 2rem 0;
 		text-align: right;
 	}
+
 	&--builder {
+		@include positioning(absolute, 0, 50%);
+		transform: translateX(-50%);
 		border-top: 4px solid var(--clr-primary-red);
 	}
 	&--calculator {
+		@include positioning(absolute, 50%, 0, true);
+		transform: translateY(50%);
 		border-top: 4px solid var(--clr-primary-blue);
 	}
 	&--karma {
+		@include positioning(absolute, 0, 50%, true);
+		transform: translateX(50%);
 		border-top: 4px solid var(--clr-primary-orange);
 	}
 	&--supervisor {
+		@include positioning(absolute, 50%, 0);
+		transform: translateY(-50%);
 		border-top: 4px solid var(--clr-primary-cyan);
+	}
+	&--builder,
+	&--calculator,
+	&--karma,
+	&--supervisor {
+		@include mediaQuery(map-get($breakpoints-map, '690')) {
+			position: static;
+			transform: translate(0, 0);
+		}
 	}
 }
